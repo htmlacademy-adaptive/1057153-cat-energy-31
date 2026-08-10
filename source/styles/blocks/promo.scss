@@ -1,0 +1,35 @@
+.promo {
+  /* stylelint-disable-next-line color-hex-alpha */
+  background-color: #68b738d9;
+}
+
+.promo__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+
+.promo__text {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.promo__button {
+  background-color: #68b738;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
