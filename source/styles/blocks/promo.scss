@@ -1,0 +1,41 @@
+.promo {
+  background-color: $color-green;
+  display: flex;
+  flex-direction: column;
+  min-height: 480px;
+
+  @media (min-width: 768px) {
+    min-height: 840px;
+  }
+
+  @media (min-width: 1440px) {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 500px;
+  }
+
+  &__title {
+    color: $color-white;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    color: $color-white;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    background-color: $color-green;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $color-white;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+  }
+}

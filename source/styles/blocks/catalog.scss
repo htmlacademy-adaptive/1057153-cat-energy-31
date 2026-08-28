@@ -1,0 +1,92 @@
+.catalog {
+  &__title {
+    color: $color-black;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px;
+    }
+
+    @media (min-width: 1440px) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 80px 40px;
+    }
+  }
+
+  &__item {
+    background-color: $color-white-milk;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:last-child {
+      background-color: transparent;
+      border: 2px solid $color-white-milk;
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+
+  &__title-current {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $color-light-black;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__item-current {
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: $color-grey;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__btn-buy {
+    background-color: $color-green;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $color-white;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__btn-plus {
+    background-color: $color-white-milk;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $color-grey;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__icon-current {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: $color-light-grey;
+    mask-image: url("../../icons/stack.svg#plus");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+  }
+}

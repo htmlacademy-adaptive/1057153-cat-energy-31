@@ -1,1 +1,14 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Oswald", system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

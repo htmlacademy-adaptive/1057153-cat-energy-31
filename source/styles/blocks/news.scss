@@ -1,0 +1,77 @@
+.news {
+  padding: 0;
+  margin-top: 60px;
+
+  &__title {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $color-black;
+    text-align: left;
+    margin: 0 0 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    @media (min-width: 768px) {
+      &::after {
+        content: "";
+        flex-grow: 1;
+        height: 2px;
+        background-color: $color-green;
+      }
+    }
+  }
+
+  &__paragraph {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $color-black;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: center;
+      gap: 0;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: 1px solid $color-light-grey;
+
+    @media (min-width: 768px) {
+      width: 350px;
+      flex-grow: 0;
+    }
+  }
+
+  &_btn {
+    background-color: $color-green;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    color: $color-white;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      width: auto;
+      padding: 0 40px;
+    }
+  }
+}

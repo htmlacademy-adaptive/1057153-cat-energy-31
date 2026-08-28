@@ -1,0 +1,110 @@
+.site-footer {
+  background-color: $color-white-milk;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 20px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 40px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 60px calc((100% - 1220px) / 2) 60px calc((100% - 1220px) / 2);
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: block;
+    width: 128px;
+    height: 24px;
+    background-color: $color-ultra-light-black;
+    mask-image: url("../../icons/stack.svg#icon-footer-text");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    transition: opacity 0.3s ease;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+
+  &__social-network {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__social-network-link {
+    display: block;
+    width: 28px;
+    height: 22px;
+    background-color: $color-light-grey;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    transition: background-color 0.3s ease;
+
+    &:hover,
+    &:focus {
+      background-color: $color-black;
+    }
+  }
+
+  &__social-network-link--vk {
+    mask-image: url("../../icons/stack.svg#icon-footer-vkontakte");
+  }
+
+  &__social-network-link--yt {
+    mask-image: url("../../icons/stack.svg#icon-footer-youtube");
+  }
+
+  &__social-network-link--tg {
+    mask-image: url("../../icons/stack.svg#icon-footer-telegram");
+  }
+
+  &__copyrigth {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__copyrigth-title {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $color-grey;
+    text-align: left;
+  }
+
+  &__copyrigth-link {
+    text-decoration: none;
+  }
+
+  &__copyrigth-link--logo {
+    display: block;
+    width: 27px;
+    height: 34px;
+    background-color: $color-light-grey;
+    mask-image: url("../../icons/stack.svg#icon-footer-academy");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    transition: background-color 0.3s ease;
+
+    &:hover,
+    &:focus {
+      background-color: $color-black;
+    }
+  }
+}
